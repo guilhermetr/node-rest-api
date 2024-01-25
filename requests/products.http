@@ -1,0 +1,31 @@
+@api = http://localhost:3000/products
+
+GET {{api}}
+
+###
+GET {{api}}/count
+
+###
+GET {{api}}/1
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "name": "HeadSet",
+    "description": "Pro HeadSet 2000"
+}
+
+###
+PUT {{api}}/3
+Content-Type: application/json
+
+{
+    "name": "HeadSet 5",
+    "description": "Pro HeadSet 3000",
+    "quantity": 20
+}
+
+###
+DELETE {{api}}/7
